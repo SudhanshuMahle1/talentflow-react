@@ -3,6 +3,9 @@
 **TalentFlow** is a modern web-based hiring platform that connects recruiters and candidates in a simple, efficient, and visually interactive way.  
 It includes a role-based interface, dynamic Kanban board for tracking candidate progress, and a mock backend for testing — all built using **React + Vite**.
 
+💻 Note: This application is currently optimized for desktop and laptop screens only.
+(Mobile responsiveness is limited and may not display correctly on smaller devices.)
+
 🔗 **Live Demo:** [https://talentboardflow.netlify.app/](https://talentboardflow.netlify.app/)
 
 ---
