@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import axios from "axios";
-import "./KanbanBoard.css";
+import "./KanbanBoard.css"; 
 
 export default function KanbanBoard() {
   const stages = ["Applied", "Screening", "Interviewing", "Offer", "Hired"];
@@ -11,13 +11,11 @@ export default function KanbanBoard() {
   const [search, setSearch] = useState("");
   const dragItem = useRef(null);
 
-  useEffect(() => {
-    fetchCandidates();
-  }, []);
-
-  async function fetchCandidates() {
+ 
+  const fetchCandidates = useCallback(async (retryCount = 0) => {
     setLoading(true);
     setError(null);
+
     try {
       const res = await axios.get("/api/candidates?page=1&pageSize=1000");
       const fixed = (res.data.candidates || []).map((c) => ({
@@ -27,11 +25,23 @@ export default function KanbanBoard() {
       setCandidates(fixed);
     } catch (err) {
       console.error("Failed to load candidates", err);
-      setError("Failed to load candidates.");
+
+      // Retry logic (max 3 times)
+      if (retryCount < 3) {
+        setTimeout(() => fetchCandidates(retryCount + 1), 1200);
+        return;
+      }
+
+      setError("⚠️ Failed to load candidates. Please refresh or check server.");
     } finally {
       setLoading(false);
     }
-  }
+  }, []);
+
+  
+  useEffect(() => {
+    fetchCandidates();
+  }, [fetchCandidates]);
 
   const candidatesByStage = (stage) =>
     candidates
@@ -82,29 +92,28 @@ export default function KanbanBoard() {
 
   return (
     <div className="kanban-wrapper">
-      {/* Fixed Header + Search Section */}
-      <div className="kanban-top">
-        <div className="kanban-header">
-          <h2>Candidates Board</h2>
-          <button onClick={fetchCandidates} disabled={loading || saving}>
-            Refresh
-          </button>
-          {saving && <small className="saving-text">Saving changes…</small>}
-        </div>
-
-        <input
-          type="text"
-          placeholder="Search candidates by name or email..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="kanban-search"
-        />
+      {/* Header */}
+      <div className="kanban-header">
+        <h2>Candidates Board</h2>
+        <button onClick={fetchCandidates} disabled={loading || saving}>
+          {loading ? "Loading..." : "Refresh"}
+        </button>
+        {saving && <small className="saving-text">Saving changes…</small>}
       </div>
 
-      {/* Error Message */}
+      {/* Search Bar */}
+      <input
+        type="text"
+        placeholder="Search candidates by name or email..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="kanban-search"
+      />
+
+      {/* Error */}
       {error && <div className="error-text">{error}</div>}
 
-      {/* Main Kanban Board */}
+      {/* Loading */}
       {loading ? (
         <div className="loading-text">Loading candidates…</div>
       ) : (
