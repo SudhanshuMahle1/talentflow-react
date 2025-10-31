@@ -1,0 +1,67 @@
+.settings-container {
+  padding: 20px;
+  background: #f9fbff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.settings-container h2 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.settings-section {
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.settings-section h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.settings-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+.settings-form input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.settings-toggles label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+.save-settings-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+.save-settings-btn:hover {
+  background: #0056b3;
+}

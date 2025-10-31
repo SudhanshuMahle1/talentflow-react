@@ -1,0 +1,244 @@
+.assessment-container {
+  padding: 30px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.assessment-container h2 {
+  font-size: 24px;
+  color: #111827;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.assessment-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.assessment-section h3 {
+  color: #1e3a8a;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.assessment-question {
+  margin-bottom: 20px;
+}
+
+.assessment-question label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.assessment-question input[type="text"],
+.assessment-question input[type="number"],
+.assessment-question textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 10px;
+}
+
+.assessment-question textarea {
+  min-height: 80px;
+}
+
+.assessment-question input[type="radio"],
+.assessment-question input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.submit-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+}
+
+.submitted-box {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.submitted-box h2 {
+  color: #065f46;
+}
+
+/* Candidate assessment styling (keeps look consistent with your app) */
+.candidate-assessment {
+  padding: 28px;
+  min-height: 60vh;
+  background: transparent;
+}
+
+.assessment-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.assessment-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.assessment-head h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #0b2545;
+}
+
+.status-bubble {
+  padding: 8px 12px;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.status-pending { background: #FFEFD5; color: #b36b00; }
+.status-saved { background: #E6F7EC; color: #1d7a38; }
+.status-submitted { background: #E6F7EC; color: #0b6623; }
+.status-validation\ error { background: #FFEFEF; color: #b30000; }
+
+.assessment-section {
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #fbfdff;
+  border: 1px solid #f0f4f8;
+}
+
+.section-title {
+  color: #1864cc;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.question-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.q-label {
+  min-width: 260px;
+  font-weight: 600;
+  color: #222;
+}
+
+.q-input {
+  flex: 1;
+  min-width: 280px;
+}
+
+.q-input input[type="text"],
+.q-input input[type="number"],
+.q-input textarea,
+.q-input select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  background: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.q-input textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.opt {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.file-stub input[type="file"] {
+  display: block;
+}
+
+.file-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.req-star {
+  color: #d9534f;
+  margin-left: 6px;
+}
+
+.error {
+  color: #b00000;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.form-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #e3e6ef;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .q-label {
+    min-width: 100%;
+  }
+  .q-input {
+    min-width: 100%;
+  }
+}
+

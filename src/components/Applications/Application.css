@@ -1,0 +1,176 @@
+.applications-container {
+  padding: 24px;
+  flex: 1;
+  background-color: #f9fafb;
+}
+
+.applications-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.applications-subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.applications-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.applications-search {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.applications-select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.applications-count {
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.application-list {
+  display: grid;
+  gap: 16px;
+}
+
+.application-card {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  transition: 0.2s ease;
+}
+
+.application-card:hover {
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
+}
+
+.application-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.application-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.view-profile-btn {
+  background-color: #f3f4f6;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.application-position {
+  color: #374151;
+  margin: 8px 0;
+}
+
+.application-contact {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.application-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.application-tag {
+  background-color: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+/* ===== Modal Styling ===== */
+.application-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(2px);
+}
+
+.application-modal {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.25s ease;
+}
+
+.application-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.application-modal-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.applications {
+  padding: 20px;
+}
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.applications-table th,
+.applications-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.applications-table th {
+  background: #f5f5f5;
+}

@@ -1,0 +1,163 @@
+.topbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 30px;
+  top: 0;
+   left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 60px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a56db;
+}
+
+.logo span {
+  color: #000;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.separator {
+  height: 24px;
+  width: 1px;
+  background-color: #d1d5db;
+  margin: 0 10px;
+}
+
+.role-toggle {
+  display: flex;
+  align-items: center;
+  background: #f7f8fa;
+  border-radius: 25px;
+  padding: 5px 15px;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.role-label {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.role-label.active {
+  color: #2563eb;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2563eb;
+}
+
+input:checked + .slider:before {
+  transform: translateX(23px);
+}
+
+.notification {
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #222;
+}
+
+.profile-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Greeting Message Section */
+.greeting-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eef3ff, #f9fafc);
+  padding: 10px 25px;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.15);
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 380px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.greeting-bar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.greeting-message {
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1a56db;
+}
+
+.greeting-message::before {
+  content: "📈";
+  font-size: 18px;
+}

@@ -1,0 +1,83 @@
+.candidate-applications {
+  padding: 20px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.candidate-applications h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #0056d2;
+  font-weight: 600;
+}
+
+.applications-section {
+  margin-bottom: 45px;
+}
+
+.applications-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.application-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.application-card h4 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.application-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.status {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.status.accepted {
+  color: #28a745;
+}
+
+.status.review {
+  color: #f0ad4e;
+}
+
+.status.rejected {
+  color: #dc3545;
+}
+
+/* Section Header Colors */
+.accepted h3 {
+  color: #28a745;
+}
+
+.review h3 {
+  color: #f0ad4e;
+}
+
+.rejected h3 {
+  color: #dc3545;
+}

@@ -1,0 +1,124 @@
+.sidebar {
+  position: fixed;
+  width: 250px;
+  background-color: #fff;
+  border-right: 1px solid #e6e6e6;
+  padding: 22px 16px;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.sidebar-header li {
+  list-style: none;
+  font-weight: 700;
+  color: #1f2d3d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.sidebar-header li i {
+  color: #0b5ed7;
+  font-size: 20px;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid #efefef;
+  margin: 14px 0;
+}
+
+.sidebar-menu {
+  margin-top: 8px;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #344055;
+  font-size: 16px;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.sidebar-menu li i {
+  min-width: 22px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sidebar-menu li:hover {
+  background-color: #f2f8ff;
+  color: #0b5ed7;
+}
+
+.sidebar-menu li.active {
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 8px;
+}
+
+.sidebar-menu li.active i {
+  color: white;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e6e6e6;
+  border-radius: 100px;
+  transition: 0.28s;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.28s;
+}
+
+.switch input:checked + .slider {
+  background-color: #0b5ed7;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}

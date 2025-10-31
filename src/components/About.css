@@ -1,0 +1,19 @@
+.about-container {
+  margin-left: 260px;
+  padding: 40px 50px;
+  color: #333;
+}
+
+.about-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b5ed7;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 18px;
+}

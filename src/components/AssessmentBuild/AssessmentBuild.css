@@ -1,0 +1,132 @@
+.assessment-builder-container {
+  padding: 30px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.builder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+.builder-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.builder-actions .btn {
+  margin-left: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.builder-actions .btn:hover {
+  background: #1d4ed8;
+}
+
+.section-block {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-block h3 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.question-type-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.type-btn {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.type-btn:hover {
+  background: #c7d2fe;
+}
+
+.question-block {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.question-block input[type="text"],
+.question-block input[type="number"],
+.question-block textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.required-label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.small-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.small-btn:hover {
+  background: #059669;
+}
+
+.preview-pane {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.preview-pane h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.preview-question {
+  margin-bottom: 20px;
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+}
