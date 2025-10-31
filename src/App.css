@@ -201,7 +201,7 @@ input:checked + .slider:before {
 /* BACKGROUND SECTION */
 .main_box {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('talentflow.jpg') center/cover no-repeat;
+    url('/public/talentflow.jpg') center/cover no-repeat;
   height: 100vh;
   position: relative;
   overflow: hidden;
