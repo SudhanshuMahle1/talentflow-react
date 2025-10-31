@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import "./kanbanboard.css";
+import "./KanbanBoard.css";
 
 export default function KanbanBoard() {
   const stages = ["Applied", "Screening", "Interviewing", "Offer", "Hired"];
