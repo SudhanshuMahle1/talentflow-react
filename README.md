@@ -1,16 +1,31 @@
-# React + Vite
+ TalentFlow – A Mini Hiring Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TalentFlow** is a modern web-based hiring platform that connects recruiters and candidates in a simple, efficient, and visually interactive way.  
+It includes a role-based interface, dynamic Kanban board for tracking candidate progress, and a mock backend for testing — all built using **React + Vite**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://talentboardflow.netlify.app/](https://talentboardflow.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🧑‍💼 **Admin Dashboard** – Manage and track candidates across different stages.
+- 👨‍💻 **Candidate Dashboard** – Apply for jobs and follow application progress.
+- 📊 **Kanban Board View** – Visual representation of the hiring pipeline.
+- 🌈 **Role Toggle** – Instantly switch between Admin and Candidate views.
+- 💾 **Mock API** – Uses MirageJS for backend simulation.
+- 🎨 **Responsive Design** – Built for all devices using clean, modern CSS.
+- ⚡ **Fast & Lightweight** – Powered by Vite for optimized builds.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| **Frontend** | React (Vite) |
+| **Mock API** | MirageJS |
+| **HTTP Client** | Axios |
+| **Styling** | CSS3 |
+| **Hosting** | Netlify |
+| **Version Control** | Git + GitHub |
